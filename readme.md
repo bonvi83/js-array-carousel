@@ -24,4 +24,6 @@ Al click delle frecce, oltre al cambio di immagine attiva, gestire il cambio di 
 
 1. Creo tutta la struttura in HTML
 2. Do corpo alla struttura con il CSS
-3. Sostituisco i tag in HTML con JS, utilizzando array e condizioni. (Sarà sicuramente un bel casino)
+3. Sostituisco i tag in HTML con JS, utilizzando array e condizioni. 
+
+(Sarà sicuramente un bel casino)
