@@ -10,13 +10,14 @@ body {
     background-color: bisque;
 }
 
-.container {
-    overflow: hidden;
+.slider {
     width: 600px;
     height: 300px;
+    overflow: hidden;
+    object-fit: cover;
+    display: flex;
     /* justify-content: center;
     align-items: center; */
-    object-fit: cover;
 
     border: 3px solid red;
 }
