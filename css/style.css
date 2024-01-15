@@ -10,18 +10,53 @@ body {
     background-color: bisque;
 }
 
+.sezione {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 .slider {
+    min-width: 100vh;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    border: 1px solid red;
+}
+
+.immagini {
+    position: relative;
     width: 600px;
     height: 300px;
     overflow: hidden;
-    object-fit: cover;
-    display: flex;
-    /* justify-content: center;
-    align-items: center; */
 
-    border: 3px solid red;
+    border: 3px solid violet;
 }
 
 img {
     width: 100%;
+}
+
+.bottone {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    text-align: center;
+    border-radius: 15px;
+    background-color: azure;
+    cursor: pointer;
+
+    border: 1px solid red;
+}
+
+.arrow-up {
+    top: 15px;
+}
+
+.arrow-down {
+    bottom: 15px;
 }
