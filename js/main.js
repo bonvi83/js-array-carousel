@@ -7,10 +7,14 @@ for (let i=0; i < slides.length; i++) {
 
     let activeClass = "";
     if(i == 0) {
-        activeClass = "active"
-    }
-
+        activeClass = "active";
+        }
+        
+        console.log(i, activeClass)
     slidesHtml += `<img src="./${slide}" class="slide ${activeClass}" alt="slide ${i}"s/>`
 }
 
 console.log(slidesHtml)
+
+let immaginiElement = document.querySelector(".immagini");
+immaginiElement.innerHTML = slidesHtml;
