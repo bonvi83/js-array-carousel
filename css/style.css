@@ -10,6 +10,17 @@ body {
     background-color: bisque;
 }
 
-/* img {
-    max-width: 100%;
-} */
+.container {
+    overflow: hidden;
+    width: 600px;
+    height: 300px;
+    /* justify-content: center;
+    align-items: center; */
+    object-fit: cover;
+
+    border: 3px solid red;
+}
+
+img {
+    width: 100%;
+}
