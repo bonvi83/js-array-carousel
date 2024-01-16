@@ -32,8 +32,6 @@ body {
     width: 800px;
     height: 400px;
     overflow: hidden;
-
-    border: 3px solid red;
 }
 
 .slide {
@@ -46,12 +44,14 @@ body {
 
 img {
     width: 100%;
+    /* paramentro da trovare per posizionare al centro */
 }
 
 
 .bottone {
     width: 25px;
     height: 25px;
+    line-height: 25px;
     position: absolute;
     text-align: center;
     border-radius: 15px;

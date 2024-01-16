@@ -29,6 +29,9 @@ sliderImages.innerHTML = slidesHtml;
 
 let currentImage = 0;
 
+
+// bottone down
+
 btnDown.addEventListener("click", function(){
 
     const images = document.querySelectorAll(".slide");
@@ -47,10 +50,28 @@ btnDown.addEventListener("click", function(){
     } 
 
     images[currentImage].classList.add("active");
-
-
-    // stesdsa identica cosa per altro bottone
+})
 
 
 
+// bottone up
+
+btnUp.addEventListener("click", function(){
+
+    const images = document.querySelectorAll(".slide");
+    console.log(images)
+
+    const test = images[currentImage];
+    console.log(test)
+
+    test.classList.remove("active");
+
+    currentImage--;
+
+
+    if (currentImage < 0){
+        currentImage= slides.length - 1;
+    } 
+
+    images[currentImage].classList.add("active");
 })
