@@ -8,9 +8,6 @@ const btnUp = document.querySelector('.arrow-up');
 const btnDown = document.querySelector('.arrow-down');
 
 
-
-
-
 for (let i=0; i < slides.length; i++) {
 
     const slide = slides [i];
@@ -26,5 +23,34 @@ for (let i=0; i < slides.length; i++) {
 
 console.log(slidesHtml)
 
-let immaginiElement = document.querySelector(".immagini");
-immaginiElement.innerHTML = slidesHtml;
+sliderImages.innerHTML = slidesHtml;
+
+
+
+let currentImage = 0;
+
+btnDown.addEventListener("click", function(){
+
+    const images = document.querySelectorAll(".slide");
+    console.log(images)
+
+    const test = images[currentImage];
+    console.log(test)
+
+    test.classList.remove("active");
+
+    currentImage++;
+
+
+    if (currentImage==slides.length){
+        currentImage=0;
+    } 
+
+    images[currentImage].classList.add("active");
+
+
+    // stesdsa identica cosa per altro bottone
+
+
+
+})

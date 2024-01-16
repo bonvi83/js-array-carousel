@@ -36,6 +36,14 @@ body {
     border: 3px solid red;
 }
 
+.slide {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
 img {
     width: 100%;
 }
