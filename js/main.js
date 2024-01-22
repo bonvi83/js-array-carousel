@@ -79,14 +79,25 @@ btnUp.addEventListener("click", function(){
 
 
 
-
 // setInterval per implementare la funzione all'infinito ogni 3 secondi
 
-
-var clock = setInterval(miaFunzione, 3000);
-
-function miaFunzione() {
-    // scorrere infinito
-}
-
 // per fermare setInterval utilizzo    clearInterval(clock);
+
+
+
+// esercizio di stamattina
+
+setInterval(function() {
+    const currentPhoto = document.querySelectorAll(".slide");
+    currentPhoto.classList.remove("active");
+
+    if (photoView >= slides.length - 1){
+        photoView = 0;
+    } else {
+        photoView++;
+    }
+
+    const otherPhoto = document.getElementsByClassName(".slide");
+    const newPhoto = otherPhoto[photoView];
+    newPhoto.classList.add("active");
+}, 3000);
