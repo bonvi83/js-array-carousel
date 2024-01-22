@@ -57,21 +57,21 @@ function scorriSotto(){
 
 
 
-// creo funzione per scorrimento automatico ogni 3 secondi
+// RICREO LA FUNZIONE PER IMPARARE FORSE QUALCOSA   
 
-function toImage(n){
-    const images = document.querySelectorAll(".slide");
-    console.log(images)
+// function toImage(n){
+//     const images = document.querySelectorAll(".slide");
+//     console.log(images)
 
-    const test = images[currentImage];
-    console.log(test)
+//     const test = images[currentImage];
+//     console.log(test)
 
-    test.classList.remove("active");
+//     test.classList.remove("active");
 
-    currentImage = n;
+//     currentImage = n;
 
-    images[n].classList.add("active");
-}
+//     images[n].classList.add("active");
+// }
 
 
 // setInterval per implementare la funzione all'infinito ogni 3 secondi
