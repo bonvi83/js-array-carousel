@@ -75,3 +75,18 @@ btnUp.addEventListener("click", function(){
 
     images[currentImage].classList.add("active");
 })
+
+
+
+
+
+// setInterval per implementare la funzione all'infinito ogni 3 secondi
+
+
+var clock = setInterval(miaFunzione, 3000);
+
+function miaFunzione() {
+    // scorrere infinito
+}
+
+// per fermare setInterval utilizzo    clearInterval(clock);
