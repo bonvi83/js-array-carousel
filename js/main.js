@@ -26,13 +26,16 @@ console.log(slidesHtml)
 sliderImages.innerHTML = slidesHtml;
 
 
-
 let currentImage = 0;
+
 
 
 // bottone down
 
-btnDown.addEventListener("click", function(){
+btnDown.addEventListener("click", scorriSotto)
+
+
+function scorriSotto(){
 
     const images = document.querySelectorAll(".slide");
     console.log(images)
@@ -45,12 +48,39 @@ btnDown.addEventListener("click", function(){
     currentImage++;
 
 
-    if (currentImage==slides.length){
-        currentImage=0;
+    if (currentImage == slides.length){
+        currentImage = 0;
     } 
 
     images[currentImage].classList.add("active");
-})
+}
+
+
+
+// creo funzione per scorrimento automatico ogni 3 secondi
+
+function toImage(n){
+    const images = document.querySelectorAll(".slide");
+    console.log(images)
+
+    const test = images[currentImage];
+    console.log(test)
+
+    test.classList.remove("active");
+
+    currentImage = n;
+
+    images[n].classList.add("active");
+}
+
+
+// setInterval per implementare la funzione all'infinito ogni 3 secondi
+
+setInterval(scorriSotto, 3000);
+
+
+
+// per fermare setInterval utilizzo    clearInterval(clock);
 
 
 
@@ -75,29 +105,3 @@ btnUp.addEventListener("click", function(){
 
     images[currentImage].classList.add("active");
 })
-
-
-
-
-// setInterval per implementare la funzione all'infinito ogni 3 secondi
-
-// per fermare setInterval utilizzo    clearInterval(clock);
-
-
-
-// esercizio di stamattina
-
-setInterval(function() {
-    const currentPhoto = document.querySelectorAll(".slide");
-    currentPhoto.classList.remove("active");
-
-    if (photoView >= slides.length - 1){
-        photoView = 0;
-    } else {
-        photoView++;
-    }
-
-    const otherPhoto = document.getElementsByClassName(".slide");
-    const newPhoto = otherPhoto[photoView];
-    newPhoto.classList.add("active");
-}, 3000);

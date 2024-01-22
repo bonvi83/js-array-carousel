@@ -32,4 +32,4 @@ BONUS 1:
 Creare una funzione goToSlide(n)  in grado di gestire il cambio di slide. Utilizzarla sul click delle frecce e nell'interval.
 
 BONUS 2:
-Lo scorrimento automatico delle immagini si blocca quando l'utente mette il mouse sopra il carosello e riparte quando il mouse esce fuori. 
+Lo scorrimento automatico delle immagini si blocca quando l'utente mette il mouse sopra il carosello e riparte quando il mouse esce fuori.
